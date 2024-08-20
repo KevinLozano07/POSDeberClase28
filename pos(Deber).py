@@ -7,7 +7,7 @@ def mostrar_menu():
     print("3. Pagar 💲")
     print("4. Quitar producto 🫳")
     print("5. Salir ❌")
-   
+
 def agregar_producto():
     global total
     producto = input("Ingrese el nombre del producto: ")
@@ -21,7 +21,7 @@ def agregar_producto():
 
 def ver_total():
     print(f"El total de sus productos es de {total:.2f}$")
-    
+
 def pagar():
     global total, carrito
     if total == 0:
@@ -49,7 +49,7 @@ def pagar():
 def elimiar_producto():
     global total
     if not carrito:
-     print("No tienes productos")
+        print("No tienes productos")
     else:
         prodcuto_eliminar = input("Ingrese el nombre del producto que eliminara: ")
         for producto in carrito:
